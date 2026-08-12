@@ -1,0 +1,7 @@
+mkdir folder_name
+cd folder_name
+code .
+
+
+
+http://127.0.0.1:5500/index4.html?name=rajat&password=rajat&email=rajat%40gmail.com&gender=male&option=javascript

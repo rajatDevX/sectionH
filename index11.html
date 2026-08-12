@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        *{
+            margin:0px;
+            box-sizing:border-box;
+            /* width=border left+padding left+element width+padding right+border right in case of border box */
+            /* width=element's width padding and border will be calculated seperately */
+        }
+        .first{
+            border:2px solid black;
+            height:200px;
+            width:200px;
+            margin:40px auto;
+            padding:60px;
+        }
+        .second{
+            border:2px solid black;
+            height: 200px;
+            width: 200px;
+            margin:20px;
+            padding:20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="first">
+        this is content inside first div
+    </div>
+    <div class="second">
+        this is content inside second div
+    </div>
+</body>
+</html>

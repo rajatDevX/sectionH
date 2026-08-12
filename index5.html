@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h2{
+            color:blue;
+            background-color: bisque;
+        }
+        .third{
+            color:orange;
+            background-color: beige;
+        }
+        #second{
+            color:blue;
+        }
+        div p{
+            color:cadetblue;
+        }
+        div.first > p{
+            color:chocolate
+        }
+        h3~p{
+            color:rgb(20, 94, 230);
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="color:red ;background-color: aqua">this is a heading</h1>
+    <h2>this is heading 2</h2>
+    <p style="color:green ;background-color: aliceblue  ;">this is a paragraph element</p>
+    <p id="second">this is second para</p>
+    
+    <div class="third">this is a div</div> 
+    <p class="third">this is a paragraph</p>
+
+
+    <p class="third">this is a paragraph</p>
+    <div>
+        <p>this is a paragraph inside a div element</p>
+    </div>
+    <div class="first">
+        <p>this is a paragraph inside a div element</p>
+        <div>
+            <p>
+                this is second para inside second div
+            </p>
+        </div>
+    </div>
+    <h3>this is third heading tag</h3>
+    <p>this is sibling of h3 tag</p>
+    <p>this is second sibling of h3 tag</p>
+</body>
+</html>
