@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        body{
+            height:100vh;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            background-color: aliceblue;
+        }
+        .card{
+            width:250px;
+            height:250px;
+            padding:20px;
+            text-align:center;
+            border:2px solid #aaa;
+            overflow:hidden;
+            transition: all 1s ;
+            /* object-fit:contain */
+        }
+        .card img{
+            width:100%;
+        }
+        .card:hover{
+            box-shadow:0 10px 20px #ccc;
+            transform:translateY(-30px);
+        }
+        .card:hover img{
+            transform:scale(1.2);
+        }
+        .card:hover button{
+            transform:scale(1.2);
+            background-color: blue;
+            color:white;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="headphone.png" alt="headphone">
+        <h2>Headphone</h2>
+        <p>A very good quality headphone</p>
+        <button>buy it</button>
+    </div>
+    <div class="card">
+        <img src="macbook.png" alt="macbook">
+        <h2>Macbook</h2>
+        <p>A very fast macbook for students</p>
+        <button>buy it</button>
+    </div>
+    
+</body>
+</html>

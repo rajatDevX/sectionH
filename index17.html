@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoFill/Autofit</title>
+    <style>
+        body{
+            width:100vw;
+        }
+        div{
+            border:2px solid black;
+        }
+        .box1{
+
+            display:grid;
+            background-color: antiquewhite;
+            grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+            width:100%;
+           
+        }
+        .box2{
+
+            display:grid;
+            background-color: antiquewhite;
+            grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box">HTML</div>
+        <div class="box">CSS</div>
+        <div class="box">React</div>
+
+    </div>
+    <div class="box2">
+        <div class="box">HTML</div>
+        <div class="box">CSS</div>
+        <div class="box">React</div>
+
+    </div>
+    
+</body>
+</html>

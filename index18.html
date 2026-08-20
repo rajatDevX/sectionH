@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition property</title>
+    <style>
+        .box{
+            height:200px;
+            width:200px;
+            background-color: red;
+            text-align:center;
+            transition: all 5s ;
+            margin-bottom: 20px;
+        }
+        .box:hover{
+            background-color: blue;
+            transform:translateX(500px) translateY(500px) scale(1.5);
+        }
+        button{
+            background-color: blue;
+            color:white;
+            padding:10px 20px;
+            border:none;
+            transition: transform 3s;
+            margin-left:100px;
+        }
+        button:hover{
+            background-color: sandybrown;
+            cursor:pointer;
+            transform :scale(1.2);
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        this is a box
+    </div>
+    <button>click me</button>
+</body>
+</html>
