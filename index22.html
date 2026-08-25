@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      .box {
+        height: 250px;
+        width: 250px;
+        background-color: red;
+        border: 2px solid red;
+        animation-name: moveBox;
+        animation-duration: 2s;
+        animation-iteration-count: 2;
+        animation-direction:normal;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: both;
+        animation-delay: 2s;
+
+      }
+      @keyframes moveBox {
+        0% {
+          transform: translateX(0px);
+          background-color: red;
+        }
+        50%{
+            transform: translateX(300px) translateY(300px);
+            background-color: orange;
+        }
+        100% {
+            transform:translateX(500px);
+            background-color: blue;
+            border-radius:50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
