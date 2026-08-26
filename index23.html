@@ -5,6 +5,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Daily Pulse News</title>
     <link rel="shortcut icon" href="favicon.png" type="image/png" />
+   <style>
+    :root{
+        --ink:#111;
+        --bg:#f4f4f4;
+        --accent:#b3122a;
+        --line:#ddd;
+    }
+    *{
+        box-sizing:border-box;
+    }
+    body{
+        margin:0;
+        background-color: var(--bg);
+        line-height:1.6;
+        color:var(--ink);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    header{
+        background-color: white;
+        padding:14px 40px;
+        text-align: center;
+        border-bottom: 3px solid var(--ink);
+    }
+    header h1{
+        margin:0;
+        font-size:2.2rem;
+        letter-spacing:1px;
+    }
+    header p{
+        font-style: italic;
+        color:#666;
+        font-size:0.9rem;
+    }
+    nav{
+        background-color: var(--ink);
+    }
+    nav ul{
+        display:flex;
+        list-style:none;
+        margin:0;
+        padding:0;
+        justify-content: center;
+        flex-wrap:wrap;
+       
+
+    }
+    nav a{
+        text-decoration:none;
+        color:white;
+        padding:12px 18px;
+        font-size:0.9rem;
+        display:block;
+    }
+    nav a:hover{
+        background-color: var(--accent);
+    }
+    .layout{
+        max-width:1100px;
+        margin:0 auto;
+        padding:20px;
+        display:grid;
+        grid-template-columns: 2.5fr 1fr;
+        gap:20px;
+    }
+    main{
+        min-width:0;
+    }
+    section{
+        margin-bottom:20px;
+    }
+    h2.section-title{
+        border-bottom:2px solid var(--accent);
+        padding:6px;
+        text-transform:uppercase;
+        letter-spacing: 1px;
+        /* display:inline-block */
+    }
+    article{
+        background-color: white;
+        border:1px solid var(--line);
+        display:flex;
+        gap:15px;
+        flex-wrap:wrap;
+        padding:15px;
+        margin-bottom:15px;
+    }
+    article figure{
+        flex:0 0 160px;
+        margin:0;
+    }
+    article img{
+        width:160px;
+        height:120px; 
+        object-fit:cover;
+    }
+    article figcaption{
+        text-align:center;
+        color:#666;
+    }
+    article .content{
+        flex:1;
+    }
+    article h3{
+        margin:0 0 3px;
+    }
+    footer{
+        text-align:center;
+        padding:20px;
+        color:white;
+        background-color: var(--ink);
+    }
+    aside{
+        background-color: white;
+        border:2px solid var(--line);
+        padding:15px;
+        align-self:start;
+    }
+    aside ul{
+        list-style:none;
+        padding:0;
+        margin:0;
+    }
+    aside li{
+        border-bottom:1px dashed var(--line);
+        padding:6px;
+        font-size:0.9rem;
+    }
+
+   </style>
   </head>
   <body>
     <header>
@@ -98,6 +227,8 @@
             </ul>
         </aside>
       </div>
-   
+   <footer>
+    <p>©2026 Daily Pulse News Network</p>
+   </footer>
   </body>
 </html>
