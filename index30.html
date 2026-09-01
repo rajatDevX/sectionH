@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opening gate animation</title>
+    <style>
+        .container{
+            width:400px;
+            height:200px;
+            margin:100px auto;
+            perspective:800px;
+        }
+        .card{
+            height:200px;
+            width:400px;
+            position:relative;
+            background: pink;
+        }
+        .message{
+            width:100%;
+            height:100%;
+            background: rgb(255, 234, 0);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        .gate{
+            position:absolute;
+            top:0;
+            width:50%;
+            height:100%;
+            background:conic-gradient(red 0deg 90deg, white 90deg 180deg,red 180deg 270deg, white 270deg 360deg);
+            background-size: 5px 5px;
+            border:1px solid black;
+            transition: all 3s;
+            transform-style: preserve-3d;
+        }
+        .left{
+            left:0;
+            transform-origin:left
+        }
+        .right{
+            right:0;
+            transform-origin:right;
+        }
+        .card:hover .left{
+            transform:rotateY(-120deg);
+        }
+        .card:hover .right{
+            transform:rotateY(120deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="message">🎉🎉Happy Birthday🎉🎉</div>
+            <div class="gate left"></div>
+            <div class="gate right"></div>
+        </div>
+    </div>
+</body>
+</html>
