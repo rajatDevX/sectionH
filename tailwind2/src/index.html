@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwindcss</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+</head>
+<body>
+    <h1 class="text-3xl font-thin underline text-blue-400">
+        Hello world!
+    </h1>
+    <p class="bg-red-500 text-white text-center text-2xl font-thin">this is a paragraph</p>
+
+    <div class="w-32 bg-green-800 mx-auto text-center mt-5 pr-3">this is width property</div>
+
+    <div class="w-1/4 bg-blue-300 text-center h-32">this is a div element</div>
+    <div class="border inline-block border-gray-400 bg-blue-200 mt-3 p-3">this is a box with border</div>
+
+    <!-- 32*4px = 128px -->
+     <!-- 32/4 = 8rem -->
+      <div class="flex gap-4 justify-center h-screen items-center mt-3 border">
+        <div class="w-1/6 border border-gray-400 bg-pink-300 text-center">One</div>
+        <div class="w-1/6 border border-gray-400 bg-green-300 text-center">Two</div>
+      </div>
+</body>
+</html>
