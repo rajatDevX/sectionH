@@ -1,11 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tailwindcss</title>
-</head>
-<body>
-    
-</body>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 min-h-screen flex justify-center items-center">
+    <main class="w-full max-w-sm bg-white rounded-xl p-8 text-center">
+      <img src="pic1.png" alt="pic" class="h-24 w-24 rounded-full border border-blue-600 object-cover object-[20%_30%] mx-auto" />
+      <h1 class="text-2xl font-bold mt-4">Rajat Jain</h1>
+      <p class="text-blue-600 font-medium">Frontend Developer</p>
+      <p class="mt-2 text-gray-600 leading-relaxed">
+        I am learning to build beautiful and responsive websites using HTML, CSS
+        and Tailwind CSS.
+      </p>
+      <div class="flex justify-center gap-4 mt-2">
+        <span class="bg-orange-200 text-orange-600 rounded-lg px-3 py-2">HTML</span>
+        <span class="bg-blue-200 text-blue-600 rounded-lg px-3 py-2">CSS</span>
+        <span class="bg-teal-200 text-teal-600 rounded-lg px-3 py-2">Tailwind</span>
+      </div>
+
+      <details class="mt-4">
+        <summary class="bg-blue-600 text-white font-bold text-medium list-none rounded-lg px-3 py-2">View Profile</summary>
+        <p>My goal is to create five responsive projects this semester.</p>
+      </details>
+    </main>
+  </body>
 </html>
