@@ -84,5 +84,65 @@ const student2={
 
 };
 
-console.log(student2.address.city);
+student2.greet();
+student2.learn();
 
+
+const person={
+    name:"Ankur",
+    age:24,
+     introduce(){
+        console.log(`Hello world ${this.name} here and I am ${this.age} years old`);
+     }
+}
+
+person.introduce();
+// Hello world person.name here and I am person.age years old
+
+
+let counter1={
+    count:0,
+    increment:function(){
+        this.count++;
+    },
+    decrement:function(){
+        this.count--;
+
+    }
+}
+
+counter1.increment();
+counter1.increment();
+counter1.increment();
+counter1.increment();
+console.log(counter1.count);
+
+
+const student3={
+    name:"Deepak",
+    age:24
+}
+
+console.log(Object.hasOwn(student3,"age"));
+console.log(Object.hasOwn(student3,"branch"));
+
+
+console.log("name" in student3);
+console.log("branch" in student3);
+console.log(Object.keys(student3));
+console.log(Object.values(student3));
+console.log(Object.entries(student3));
+
+const students=[{id:1,name:"Vijay",city:"mathura"},{id:2,name:"anjali",city:"Etawah"},{id:3,name:"ankit",city:"Gwalior"}];
+
+console.log(students[0]);
+console.log(students[1]);
+console.log(students[2].name);
+
+students.forEach((student)=>{
+    console.log(`Hello ${student.name}`)
+});
+
+students.forEach((student)=>{
+    console.log(`Hello ${student.name} from ${student.city}`)
+});
